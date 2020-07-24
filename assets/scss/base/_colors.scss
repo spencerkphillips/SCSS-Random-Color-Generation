@@ -1,0 +1,17 @@
+// $colors: $color-blue,$color-red,$color-green,$color-turqoise,$color-orange,$color-magenta,$color-purple;
+$colors: red,
+orange,
+yellow,
+green,
+blue,
+purple;
+$repeat: 20;
+
+@for $i from 1 through $repeat{
+    .text-random:nth-child(#{length($colors)}n+#{$i}){
+        color: nth($colors, random(length($colors)));
+    }
+    .bg-random:nth-child(#{length($colors)}n+#{$i}) {
+        background-color: nth($colors, random(length($colors)));
+    }
+}

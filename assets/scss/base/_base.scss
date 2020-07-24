@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //Defines what 1rem is equal to
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.bg-primary {@include bg-primary;}
+
+.bg-secondary {@include bg-secondary;}
+
+.bg-dark {@include bg-dark;}
+
+.bg-light {@include bg-light;}
+
+.bg-black {@include bg-black;}
+
+.bg-white {@include bg-white;}

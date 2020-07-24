@@ -1,0 +1,27 @@
+/*
+Project Name: Spencer K Media Staging
+Project URI: /staging.spencerkmedia.local/
+Author: SpencerKMedia
+Author URI: https://spencerkmedia.com/
+Description: 
+Version: 0.4.1.01
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: skm
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, project-options, threaded-comments, translation-ready
+*/
+
+
+/* Import Vendors First | Helps when overwriting default styles in proper hierarchy. */
+@import "vendors/vendors";
+
+/* Import Abstracts | Importing our abstracts before our base and components allows us to use our variables and mixins in our .scss files. */
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+/* Loading our base predefines our core properties and sets inheritance for our styles. */
+@import "base/base";
+@import "base/colors";
+@import "base/animations";
+@import "base/type";
+@import "base/utils";
